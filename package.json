@@ -1,0 +1,48 @@
+{
+  "name": "ibot-mcp",
+  "version": "1.0.0",
+  "description": "Servidor MCP da Integra Sistema para o I-Bot (WhatsApp) — SOMENTE LEITURA: lista e lê conversas, campos, tags e mídia pelo Claude Code.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "ibot-mcp": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "login": "node index.js login"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SistemaIntegra/ibot-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SistemaIntegra/ibot-mcp/issues"
+  },
+  "homepage": "https://github.com/SistemaIntegra/ibot-mcp#readme",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ibot",
+    "whatsapp",
+    "claude",
+    "claude-code",
+    "integra-sistema"
+  ],
+  "author": "Integra Sistema",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "login.js",
+    "panel.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "playwright": "^1.40.0",
+    "zod": "^3.23.0"
+  }
+}
